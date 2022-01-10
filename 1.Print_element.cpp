@@ -1,9 +1,9 @@
 #include<iostream>
-#define max 1000
+#define MAX_SIZE 1000
 using namespace std;
 int main()
 {
-	int arr[max];
+	int arr[MAX_SIZE];
 	int a,b;
 	cout<<"Enter the size of arr:- ";
 	cin>>a;
@@ -17,6 +17,6 @@ int main()
 	cout<<"Elements of the arr are:- \n";
 	for(b=1; b<=a; b++)
 	{
-		cout<<arr[b];
+		cout<<"\t"<<arr[b];
 	}
 }
