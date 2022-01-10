@@ -1,4 +1,4 @@
-//								!! find max number & min number in array uisng c++ !!
+//								!! find max value & min value in array uisng c++ !!
 
 #include<iostream>
 #define max_size 1000
