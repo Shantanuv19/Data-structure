@@ -1,10 +1,10 @@
 //											!! find number of even and odd element in array !!
 #include<iostream>
-#define max_size 1000
+#define MAX_SIZE 1000
 using namespace std;
 int main()
 {
-	int arr[max_size];
+	int arr[MAX_SIZE];
 	int a,b,c,even=0,odd=0;
 	cout<<"Enter the size of the arr:- ";
 	cin>>a;
