@@ -1,3 +1,5 @@
+// 										!!Print element of the array using c++!!
+
 #include<iostream>
 #define MAX_SIZE 1000
 using namespace std;
