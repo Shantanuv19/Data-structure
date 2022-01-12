@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
     int a,b,sum,sub,pro;
-	float diff;
+    float diff;
     cin>>a;
     cin>>b;
     sum=a+b;
