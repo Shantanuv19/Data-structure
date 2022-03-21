@@ -1,29 +1,21 @@
-//											!! find number of even and odd element in array !!
 #include<iostream>
-#define MAX_SIZE 1000
 using namespace std;
 int main()
 {
-	int arr[MAX_SIZE];
-	int a,b,c,even=0,odd=0;
+	int arr[100], size, a, b, c,odd=0,even=0;
 	cout<<"Enter the size of the arr:- ";
-	cin>>a;
-	for(b=1; b<=a; b++)
+	cin>>size;
+	for(a=0; a<size; a++)
 	{
-		cout<<"Ener the value of the element:- ";
-		cin>>arr[b];
-	}
-	for(b=1; b<=a; b++)
-	{
-		if(arr[b]%2==0)
-		{
-			even++;
-		}
-		else
+		cin>>arr[a];
+		if(a & 1)
 		{
 			odd++;
 		}
+		else
+		{
+			even++;
+		}
 	}
-	cout<<"No of even is:- "<<even<<endl;
-	cout<<"No of odd is:- "<<odd;
+	cout<<"odd is:- "<<odd<<endl<<"even is:- "<<even;
 }
