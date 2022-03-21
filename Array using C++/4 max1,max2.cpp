@@ -1,32 +1,22 @@
-//									!! find two max number in arr uisng c++ !!
 #include<iostream>
-#include<limits.h>
-#define max_size 1000
 using namespace std;
 int main()
 {
-	int arr[max_size];
-	int a,b,c,max1,max2;
+	int arr[100], size, a, b, c,max1,max2;
 	cout<<"Enter the size of the arr:- ";
-	cin>>a;
-	for(b=1; b<=a; b++)
+	cin>>size;
+	for(a=0; a<size; a++)
 	{
-		cout<<"Enter the element of the arr:- ";
-		cin>>arr[b];
-	}
-	max1=max2=INT_MIN;
-	for(b=1; b<=a; b++)
-	{
-		if(arr[b]>max1)
+		cin>>arr[a];
+		if(arr[a]>max1)
 		{
 			max2=max1;
-			max1=arr[b];
+			max1=arr[a];
 		}
-		else if(arr[b]>max2 && arr[b]<max1)
+		else if(arr[a]>max2)
 		{
-			max2=arr[b];
+			max2=arr[a];
 		}
 	}
-	cout<<"first max no is:- "<<max1<<endl;
-	cout<<"second max is:- "<<max2;
+	cout<<"Max1 is:- "<<max1<<endl<<"max2 is:- "<<max2;
 }
