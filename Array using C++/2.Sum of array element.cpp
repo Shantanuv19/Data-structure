@@ -1,21 +1,15 @@
-//											!! Sum of array element using c++ !!
 #include<iostream>
-#define max 1000
 using namespace std;
 int main()
 {
-	int arr[max];
-	int a,b,sum=0;
-	cout<<"Enter the size of arr:- ";
-	cin>>a;
-	for(b=1; b<=a; b++)
+	int size, a, b, c=0;
+	cout<<"Enter the size of the arr:- ";
+	cin>>size;
+	int arr[size];
+	for(a=0; a<size; a++)
 	{
-		cout<<"Enter the value of the element:- ";
-		cin>>arr[b];
+		cin>>arr[a];
+		c+=arr[a];
 	}
-	for(b=1; b<=a; b++)
-	{
-		sum=sum+arr[b];
-	}
-	cout<<"Sum of the element is:- "<<sum;
+	cout<<"sum of the all element is:- "<<c;
 }
