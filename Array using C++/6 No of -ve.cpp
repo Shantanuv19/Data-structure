@@ -1,24 +1,17 @@
-//										!! find negative element in array !!
 #include<iostream>
-#define max_size 1000
 using namespace std;
 int main()
 {
-	int arr[max_size];
-	int a,b,c=0;
+	int arr[100], size, a, b, c,ne=0;
 	cout<<"Enter the size of the arr:- ";
-	cin>>a;
-	for(b=1; b<=a; b++)
+	cin>>size;
+	for(a=0; a<size; a++)
 	{
-		cout<<"Enter the value of the element:- ";
-		cin>>arr[b];
-	}
-	for(b=1; b<=a; b++)
-	{
-		if(arr[b]<0)
+		cin>>arr[a];
+		if(arr[a]<0)
 		{
-			c++;
+			ne++;
 		}
 	}
-	cout<<"Total no of the element is:- "<<c;
+	cout<<"All -ve element is:- "<<ne;
 }
