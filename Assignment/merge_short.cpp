@@ -45,7 +45,7 @@ void MergeSort(int *a, int low, int high)
 	{
 		mid=(low+high)/2;
 		MergeSort(a, low, mid);
-		MergeSort(a, mid+1, high);2
+		MergeSort(a, mid+1, high);
 		Merge(a, low, high, mid);
 	}
 }
